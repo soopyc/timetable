@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <!--
+            Oi! nice seeing you here. This website is written entirely in html and js. This is just a static site,
+            there's nothing to exploit here. 
+        -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
 
@@ -17,17 +21,51 @@
             .sticky-offset {
                 top: 56px;
             }
+
+            .gradient-text {
+                background-color: #f3ec78;
+                  /* Create the gradient. */
+                background-image: linear-gradient(
+                    45deg,
+                    #CA4246 16.666%, 
+                    #E16541 16.666%, 
+                    #E16541 33.333%, 
+                    #F18F43 33.333%, 
+                    #F18F43 50%, 
+                    #8B9862 50%, 
+                    #8B9862 66.666%, 
+                    #476098 66.666%, 
+                    #476098 83.333%, 
+                    #A7489B 83.333%
+                );
+                /* Set the background size and repeat properties. */
+                background-size: 100%;
+                background-repeat: repeat;
+                background-clip: text;
+                
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+            }
         </style>
     </head>
     <body>
+
         <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Random stuff</a>
+                <a class="navbar-brand gradient-text" href="#">Random utilities</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation items">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navContent">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="#" aria-current="page">Timetable</a>
+                        <a class="nav-link" href="./links">Links</a>
+                    </div>
+                </div>
+
             </div>
         </nav>
+
 
         <div class="container">
             <br>
@@ -420,8 +458,16 @@
             </div>
             <br>
             <p>
-                Made by Kenny Cheung <a href="//github.com/kcomain" target="_blank"><img src="./mark-github.svg" alt="GitHub Icon"></a>
+                Made by Kenny Cheung <a href="//github.com/kcomain" target="_blank"><img src="./mark-github.svg" alt="GitHub Icon" data-bs-toggle="tooltip" title="GitHub profile"></a>
+                <a id="repo-button" href="//github.com/kcomain/timetable" data-bs-toggle="tooltip" title="Source code"><img src="./repo.svg" alt="Repository icon"></a>
             </p>
         </div>
+        <script>
+            // Initialize the tooltips because idk why it doesnt do that automatically lol
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
     </body>
 </html>
