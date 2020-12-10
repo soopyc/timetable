@@ -7,13 +7,13 @@ also i dont have to get my handbook out lol
 
 also contains links for stuff.
 
-# Deployment 
+### Deployment 
 it's a static site. you can just use whatever dev server you have and like
 
-# Link
+### Link
 [current page](https://time.kcomain.dev)
 
-# Licensing
+### Licensing
 GNU GPL 3.0
 
 :shipit:
