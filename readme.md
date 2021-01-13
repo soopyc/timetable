@@ -14,6 +14,6 @@ it's a static site. you can just use whatever dev server you have and like
 [current page](https://time.kcomain.dev)
 
 ### Licensing
-GNU GPL 3.0
+MIT
 
 :shipit:
