@@ -59,7 +59,7 @@
                 <div class="collapse navbar-collapse" id="navContent">
                     <div class="navbar-nav">
                         <a class="nav-link active" href="#" aria-current="page">Timetable</a>
-                        <a class="nav-link" href="./links">Links</a>
+                        <!-- <a class="nav-link" href="./links">Links</a> -->
                     </div>
                 </div>
 
@@ -101,159 +101,130 @@
                 <div class="card-body">
                     <p>
                         <b class="text-primary">Note: </b> If there's nothing in the <kbd>Current time</kbd> column, you don't have to attend class at that point.
-                        This timetable is confirmed accurate, but please message me if there's anything off.
+                        Please message me if there's anything off.
                     </p>
 
                     <div class="tab-content" id="weeks">
                         <div class="tab-pane fade show active" id="week-a" role="tabpanel" aria-labelledby="week-a">
                             <div class="table-responsive">
-                                <table class="table table-striped table-hover table-bordered align-middle">
+                                <table class="table table-hover table-bordered align-middle">
                                     <thead>
                                         <tr>
                                             <th scope="col">Period</th>
-                                            <th scope="col" class="d-none d-xl-block">Time</th>
                                             <th scope="col" class="text-primary">Half-day Timetable</th>
                                             <th scope="col">Day 1 (Mon)</th>
                                             <th scope="col">Day 2 (Tue)</th>
                                             <th scope="col">Day 3 (Wed)</th>
                                             <th scope="col">Day 4 (Thu)</th>
                                             <th scope="col">Day 5 (Fri)</th>
+                                            <th scope="col" class="d-none d-xl-block">Normal Time</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">08:05-08:25</td>
-                                            <td><span class="text-muted">-</span></td>
+                                            <td rowspan="2">08:<span class="text-danger">00</span>-08:10</td>
                                             <td colspan="5">Morning assembly/Reading period</td>
+                                            <td class="d-none d-xl-block">08:05-08:25</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">08:25-08:40</td>
-                                            <td><span class="text-muted">-</span></td>
                                             <td colspan="5">Class Teacher Period (CTP) 1</td>
+                                            <td class="d-none d-xl-block">08:25-08:40</td>
                                         </tr>
                                         <tr>
                                             <td>1</td>
+                                            <td>08:10-08:45</td>
+                                            <td rowspan="2">English</td>
+                                            <td data-bs-toggle="tooltip" title="Citizenship and Social Development" rowspan="2">CSD</td>
+                                            <td rowspan="2">Math</td>
+                                            <td rowspan="2" class="table-primary">X1</td>
+                                            <td rowspan="2" class="table-warning">X2</td>
                                             <td class="d-none d-xl-block">08:40-09:20</td>
-                                            <td>08:15-08:50</td>
-                                            <td>Chinese</td>
-                                            <td>English</td>
-                                            <td>English</td>
-                                            <td class="table-primary">X3</td>
-                                            <td>PE</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
+                                            <td>08:45-09:20</td>
                                             <td class="d-none d-xl-block">09:20-10:00</td>
-                                            <td>08:50-09:25</td>
-                                            <td>Math</td>
-                                            <td>English</td>
-                                            <td>English</td>
-                                            <td>Chinese</td>
-                                            <td>PE</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">10:00-10:20</td>
-                                            <td>09:25-09:40</td>
+                                            <td>09:20-09:35</td>
                                             <td colspan="5">Recess 1</td>
+                                            <td class="d-none d-xl-block">10:00-10:20</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td class="d-none d-xl-block">10:20-11:00</td>
-                                            <td>09:40-10:15</td>
-                                            <td>English</td>
-                                            <td class="table-primary">X3</td>
-                                            <td>Liberal Studies</td>
-                                            <td class="table-warning">X2</td>
+                                            <td>09:35-10:10</td>
+                                            <td rowspan="2" class="table-success">X3</td>
+                                            <td rowspan="2">Chinese</td>
+                                            <td rowspan="2">PE</td>
+                                            <td rowspan="2" class="table-warning">X2</td>
                                             <td>Chinese</td>
+                                            <td class="d-none d-xl-block">10:20-11:00</td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
+                                            <td>10:10-10:45</td>
+                                            <td data-bs-toggle="tooltip" title="Citizenship and Social Development">CSD</td>
                                             <td class="d-none d-xl-block">11:00-11:40</td>
-                                            <td>10:15-10:50</td>
-                                            <td>English</td>
-                                            <td class="table-primary">X3</td>
-                                            <td>Liberal Studies</td>
-                                            <td class="table-warning">X2</td>
-                                            <td>Chinese</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">11:40-12:45</td>
-                                            <td>10:50-11:05</td>
+                                            <td>10:45-10:55</td>
                                             <td colspan="5">Recess 2 (Lunch)</td>
+                                            <td class="d-none d-xl-block">11:40-12:45</td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td class="d-none d-xl-block">12:45-13:25</td>
-                                            <td>11:05-11:40</td>
-                                            <td class="table-warning">X2</td>
+                                            <td>10:55-11:30</td>
+                                            <td>PSSE</td>
                                             <td>Math</td>
-                                            <td>Chinese</td>
-                                            <td>English</td>
-                                            <td class="table-primary">X3</td>
+                                            <td rowspan="2" class="table-success">X3</td>
+                                            <td rowspan="2">English</td>
+                                            <td rowspan="2">Math</td>
+                                            <td class="d-none d-xl-block">12:45-13:25</td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
+                                            <td>11:30-12:05</td>
+                                            <td>Math</td>
+                                            <td class="table-success">X3</td>
                                             <td class="d-none d-xl-block">13:25-14:05</td>
-                                            <td>11:40-12:15</td>
-                                            <td class="table-warning">X2</td>
-                                            <td>Chinese</td>
-                                            <td>Chinese</td>
-                                            <td>English</td>
-                                            <td class="table-primary">X3</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">14:05-14:20</td>
-                                            <td>12:15-13:30</td>
+                                            <td>12:05-12:20</td>
                                             <td colspan="5">Recess 3</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block"><span class="text-muted">-</span></td>
-                                            <td>13:30-14:30</td>
-                                            <td colspan="5"><b class="text-primary">New timetable only</b> CTP</td>
+                                            <td class="d-none d-xl-block">14:05-14:20</td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
-                                            <td class="d-none d-xl-block">14:20-15:00</td>
-                                            <td>14:30-15:05</td>
-                                            <td>Liberal Studies</td>
-                                            <td>Liberal Studies</td>
+                                            <td>12:20-12:55</td>
+                                            <td rowspan="2">Chinese</td>
+                                            <td rowspan="2" class="table-warning">X2</td>
+                                            <td rowspan="2" class="table-primary">X1</td>
                                             <td>Math</td>
-                                            <td>PSSE</td>
-                                            <td>Assembly/CTP</td>
+                                            <td rowspan="2">CTP/CCA</td>
+                                            <td class="d-none d-xl-block">14:20-15:00</td>
                                         </tr>
                                         <tr>
                                             <td>8</td>
+                                            <td>12:55-13:30</td>
+                                            <td>Chinese</td>
                                             <td class="d-none d-xl-block">15:00-15:40</td>
-                                            <td>15:05-15:40</td>
-                                            <td>Liberal Studies</td>
-                                            <td>Liberal Studies</td>
-                                            <td>Math</td>
-                                            <td>Math</td>
-                                            <td>Assembly/CTP</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">15:40-15:45</td>
                                             <td><span class="text-muted">-</span></td>
                                             <td colspan="5">CTP 2</td>
+                                            <td class="d-none d-xl-block">15:40-15:45</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">15:45-16:00</td>
-                                            <td>15:40-16:00</td>
-                                            <td colspan="5">Break</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">08:00</td>
-                                            <td><span class="text-muted">-</span></td>
-                                            <td colspan="5">CCA Period</td>
+                                            <td><span class="text-muted">After 15:45</span></td>
+                                            <td colspan="5">CCA Period/Supplementary Class/Consolidation Class</td>
+                                            <td class="d-none d-xl-block">15:50-17:00</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -261,153 +232,123 @@
                         </div>
                         <div class="tab-pane fade" id="week-b" role="tabpanel" aria-labelledby="week-b">
                             <div class="table-responsive">
-                                <table class="table table-striped table-hover table-bordered align-middle">
+                                <table class="table table-hover table-bordered align-middle">
                                     <thead>
                                         <tr>
                                             <th scope="col">Period</th>
-                                            <th scope="col" class="d-none d-xl-block">Time</th>
-                                            <th scope="col" class="text-primary">New Timetable</th>
+                                            <th scope="col" class="text-primary">Half-day Timetable</th>
                                             <th scope="col">Day 6 (Mon)</th>
                                             <th scope="col">Day 7 (Tue)</th>
                                             <th scope="col">Day 8 (Wed)</th>
                                             <th scope="col">Day 9 (Thu)</th>
                                             <th scope="col">Day 10 (Fri)</th>
+                                            <th scope="col" class="d-none d-xl-block">Normal Time</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">08:05-08:25</td>
-                                            <td><span class="text-muted">-</span></td>
+                                            <td rowspan="2">08:<span class="text-danger">00</span>-08:10</td>
                                             <td colspan="5">Morning assembly/Reading period</td>
+                                            <td class="d-none d-xl-block">08:05-08:25</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">08:25-08:40</td>
-                                            <td><span class="text-muted">-</span></td>
                                             <td colspan="5">Class Teacher Period (CTP) 1</td>
+                                            <td class="d-none d-xl-block">08:25-08:40</td>
                                         </tr>
                                         <tr>
                                             <td>1</td>
+                                            <td>08:10-08:45</td>
+                                            <td class="table-primary" rowspan="2">X1</td>
+                                            <td class="table-primary">X1</td>
+                                            <td rowspan="2">Math</td>
+                                            <td rowspan="2">Chinese</td>
+                                            <td class="table-warning">X2</td>
                                             <td class="d-none d-xl-block">08:40-09:20</td>
-                                            <td>08:15-08:50</td>
-                                            <td>English</td>
-                                            <td>Liberal Studies</td>
-                                            <td>Chinese</td>
-                                            <td>PE</td>
-                                            <td>Math</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
+                                            <td>08:45-09:20</td>
+                                            <td data-bs-toggle="tooltip" title="Citizenship and Social Development">CSD</td>
+                                            <td data-bs-toggle="tooltip" title="Citizenship and Social Development">CSD</td>
                                             <td class="d-none d-xl-block">09:20-10:00</td>
-                                            <td>08:50-09:25</td>
-                                            <td>English</td>
-                                            <td>Liberal Studies</td>
-                                            <td>Chinese</td>
-                                            <td>PE</td>
-                                            <td>Math</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">10:00-10:20</td>
-                                            <td>09:25-09:40</td>
+                                            <td>09:20-09:35</td>
                                             <td colspan="5">Recess 1</td>
+                                            <td class="d-none d-xl-block">10:00-10:20</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
+                                            <td>09:35-10:10</td>
+                                            <td rowspan="2">Chinese</td>
+                                            <td rowspan="2">Chinese</td>
+                                            <td rowspan="2">English</td>
+                                            <td rowspan="2">English</td>
+                                            <td rowspan="2">English</td>
                                             <td class="d-none d-xl-block">10:20-11:00</td>
-                                            <td>09:40-10:15</td>
-                                            <td>PSSE</td>
-                                            <td>Math</td>
-                                            <td>Liberal Studies</td>
-                                            <td>Chinese</td>
-                                            <td>English</td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
+                                            <td>10:10-10:45</td>
                                             <td class="d-none d-xl-block">11:00-11:40</td>
-                                            <td>10:15-10:50</td>
-                                            <td>Math</td>
-                                            <td>Math</td>
-                                            <td>Liberal Studies</td>
-                                            <td>Math</td>
-                                            <td>Chinese</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">11:40-12:45</td>
-                                            <td>10:50-11:05</td>
+                                            <td>10:45-10:55</td>
                                             <td colspan="5">Recess 2 (Lunch)</td>
+                                            <td class="d-none d-xl-block">11:40-12:45</td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
+                                            <td>10:55-11:30</td>
+                                            <td rowspan="2">English</td>
+                                            <td rowspan="2" class="table-success">X3</td>
+                                            <td rowspan="2" class="table-warning">X2</td>
+                                            <td class="table-primary">X1</td>
+                                            <td rowspan="2" class="table-primary">X1</td>
                                             <td class="d-none d-xl-block">12:45-13:25</td>
-                                            <td>11:05-11:40</td>
-                                            <td>Chinese</td>
-                                            <td>Chinese</td>
-                                            <td class="table-warning">X2</td>
-                                            <td>English</td>
-                                            <td>Liberal Studies</td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
+                                            <td>11:30-12:05</td>
+                                            <td>PSSE</td>
                                             <td class="d-none d-xl-block">13:25-14:05</td>
-                                            <td>11:40-12:15</td>
-                                            <td>Chinese</td>
-                                            <td>Chinese</td>
-                                            <td>Math</td>
-                                            <td>English</td>
-                                            <td>Liberal Studies</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">14:05-14:20</td>
-                                            <td>12:15-13:30</td>
+                                            <td>12:05-12:20</td>
                                             <td colspan="5">Recess 3</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block"><span class="text-muted">-</span></td>
-                                            <td>13:30-14:30</td>
-                                            <td colspan="5"><b class="text-primary">New timetable only</b> CTP</td>
+                                            <td class="d-none d-xl-block">14:05-14:20</td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
+                                            <td>12:20-12:55</td>
+                                            <td rowspan="2" class="table-success">X3</td>
+                                            <td rowspan="2" class="table-warning">X2</td>
+                                            <td rowspan="2">PE</td>
+                                            <td rowspan="2">Math</td>
+                                            <td rowspan="2">English</td>
                                             <td class="d-none d-xl-block">14:20-15:00</td>
-                                            <td>14:30-15:05</td>
-                                            <td class="table-warning">X2</td>
-                                            <td class="table-primary">X3</td>
-                                            <td>English</td>
-                                            <td class="table-warning">X2</td>
-                                            <td class="table-primary">X3</td>
                                         </tr>
                                         <tr>
                                             <td>8</td>
+                                            <td>12:55-13:30</td>
                                             <td class="d-none d-xl-block">15:00-15:40</td>
-                                            <td>15:05-15:40</td>
-                                            <td class="table-warning">X2</td>
-                                            <td class="table-primary">X3</td>
-                                            <td>English</td>
-                                            <td class="table-warning">X2</td>
-                                            <td class="table-primary">X3</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">15:40-15:45</td>
                                             <td><span class="text-muted">-</span></td>
                                             <td colspan="5">CTP 2</td>
+                                            <td class="d-none d-xl-block">15:40-15:45</td>
                                         </tr>
                                         <tr>
                                             <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">15:45-16:00</td>
-                                            <td>15:40-16:00</td>
-                                            <td colspan="5">Break</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="text-muted">-</span></td>
-                                            <td class="d-none d-xl-block">08:00</td>
-                                            <td><span class="text-muted">-</span></td>
-                                            <td colspan="5">CCA Period</td>
+                                            <td><span class="text-muted">After 15:45</span></td>
+                                            <td colspan="5">CCA Period/Supplementary Class/Consolidation Class</td>
+                                            <td class="d-none d-xl-block">15:50-17:00</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -418,7 +359,7 @@
             </div>
             <br>
             <p>
-                Made by Kenny Cheung <a href="//github.com/kcomain" target="_blank"><img src="./mark-github.svg" alt="GitHub Icon" data-bs-toggle="tooltip" title="GitHub profile"></a>
+                Made by Sophie Cheung <a href="//github.com/kcomain" target="_blank"><img src="./mark-github.svg" alt="GitHub Icon" data-bs-toggle="tooltip" title="GitHub profile"></a>
                 <a id="repo-button" href="//github.com/kcomain/timetable" data-bs-toggle="tooltip" title="Source code"><img src="./repo.svg" alt="Repository icon"></a>
             </p>
         </div>
