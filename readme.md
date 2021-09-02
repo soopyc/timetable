@@ -3,7 +3,7 @@
 garbage html page i dont know what im doing lmao
 
 contains online version of a timetable used for school stuff
-also i dont have to get my handbook out lol
+also i dont have to get my handbook out 
 
 also contains links for stuff.
 
