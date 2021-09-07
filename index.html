@@ -377,15 +377,15 @@
                 return new bootstrap.Tooltip(tooltipTriggerEl);
             })
 
-            const weekA = bootstrap.Tab.getInstance(document.querySelector("#week-a-opt"));
-            const weekB = bootstrap.Tab.getInstance(document.querySelector("#week-b-opt"));
 
             function weekAClicked() {
+                const weekA = bootstrap.Tab.getInstance(document.querySelector("#week-a-opt"));
                 document.cookie = 'currentSelected=week-a; samesite=lax; max-age=31536000';
                 weekA.show();
             }
 
             function weekBClicked() {
+                const weekB = bootstrap.Tab.getInstance(document.querySelector("#week-b-opt"));
                 document.cookie = 'currentSelected=week-b; samesite=lax; max-age=31536000';
                 weekB.show();
             }
