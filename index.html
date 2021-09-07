@@ -418,22 +418,20 @@
         }
 
         // On page load finish haha english good
-        window.onload = (event) => {
-            const cookies = parseCookies();
-            switch (cookies.currentSelected) {
-                case 'week-a':
-                    weekAClicked();
-                    break;
+        const cookies = parseCookies();
+        switch (cookies.currentSelected) {
+          case 'week-a':
+            weekAClicked();
+            break;
 
-                case 'week-b':
-                    weekBClicked();
-                    break;
+          case 'week-b':
+            weekBClicked();
+            break;
 
-                default:
-                    // reset cookie
-                    document.cookie = 'currentSelected=; samesite=lax; expires=Thu, 01 Jan 1970 00:00:00 GMT';
-                    break;
-            }
+          default:
+            // reset cookie
+            document.cookie = 'currentSelected=; samesite=lax; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+            break;
         }
 
     </script>
