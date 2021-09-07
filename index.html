@@ -88,11 +88,11 @@
                         <div class="p-2 align-end bd-highlight">
                             <ul class="nav nav-pills mb-3" id="weekselector" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="week-a-opt" data-bs-toggle="pill" href="#week-a" role="tab" aria-controls="week-a" aria-selected="true">Week A</a>
+                                    <a class="nav-link active" id="week-a-opt" data-bs-toggle="pill" href="#week-a" role="tab" aria-controls="week-a" aria-selected="true" onclick="weekAClicked()">Week A</a>
                                 </li>
                                 <span>&nbsp;</span>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="week-b-opt" data-bs-toggle="pill" href="#week-b" role="tab" aria-controls="week-b" aria-selected="false">Week B</a>
+                                    <a class="nav-link" id="week-b-opt" data-bs-toggle="pill" href="#week-b" role="tab" aria-controls="week-b" aria-selected="false" onclick="weekBClicked()">Week B</a>
                                 </li>
                             </ul>
                         </div>
@@ -362,13 +362,61 @@
                 Made by Sophie Cheung <a href="//github.com/kcomain" target="_blank"><img src="./mark-github.svg" alt="GitHub Icon" data-bs-toggle="tooltip" title="GitHub profile"></a>
                 <a id="repo-button" href="//github.com/kcomain/timetable" data-bs-toggle="tooltip" title="Source code"><img src="./repo.svg" alt="Repository icon"></a>
             </p>
+            <p>
+                <b>Privacy:</b> This page uses a single cookie for storing the currently selected tab. No user information is tracked otherwise.
+            </p>
         </div>
         <script>
-            // Initialize the tooltips because idk why it doesnt do that automatically lol
+            // MODULES!!!! (wrong
+            // Copyright (c) 2021-present kcomain 
+            // Licensed under AGPL-3.0 or later 
+
+            // Initialize the tooltips
             const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
             let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl)
+                return new bootstrap.Tooltip(tooltipTriggerEl);
             })
+
+            const weekA = bootstrap.Tab.getInstance(document.querySelector("#week-a-opt"));
+            const weekB = bootstrap.Tab.getInstance(document.querySelector("#week-b-opt"));
+
+            function weekAClicked() {
+                document.cookie = 'currentSelected=week-a; samesite=lax; max-age=31536000';
+                weekA.show();
+            }
+
+            function weekBClicked() {
+                document.cookie = 'currentSelected=week-b; samesite=lax; max-age=31536000';
+                weekB.show();
+            }
+
+            function parseCookies() {
+                const thething = {};
+                for (const i of document.cookie.split('; ')) {  // space after the semicolon: mdn:/docs/Web/API/Document/cookie
+                    const anotherthing = i.split('=');
+                    thething[anotherthing[0]] = anotherthing[1] === '' ? undefined : anotherthing[1];
+                }
+                
+                return thething;
+            }
+
+            // On page load finish haha english good
+            const cookies = parseCookies();
+            switch (cookies.currentSelected) {
+                case 'week-a':
+                    weekAClicked();
+                    break;
+
+                case 'week-b':
+                    weekBClicked();
+                    break;
+
+                default:
+                    // reset cookie
+                    document.cookie = 'currentSelected=; samesite=lax; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+                    break;
+            }
+
         </script>
     </body>
 </html>
