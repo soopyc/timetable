@@ -343,7 +343,8 @@
                                         <td rowspan="2" class="table-warning">X2</td>
                                         <td rowspan="2">PE</td>
                                         <td rowspan="2">Math</td>
-                                        <td rowspan="2" class="table-info">MID</td>
+                                        <td rowspan="2" class="table-info" data-bs-toggle="tooltip"
+                                            title="I honestly have no idea what this is">MID</td>
                                         <td class="d-none d-xl-block">14:20-15:00</td>
                                     </tr>
                                     <tr>
@@ -393,15 +394,15 @@
             return new bootstrap.Tooltip(tooltipTriggerEl);
         })
 
+        const weekA = bootstrap.Tab.getOrCreateInstance(document.querySelector("#week-a-opt"));
+        const weekB = bootstrap.Tab.getOrCreateInstance(document.querySelector("#week-b-opt"));
 
         function weekAClicked() {
-            const weekA = bootstrap.Tab.getInstance(document.querySelector("#week-a-opt"));
             document.cookie = 'currentSelected=week-a; samesite=lax; max-age=31536000';
             weekA.show();
         }
 
         function weekBClicked() {
-            const weekB = bootstrap.Tab.getInstance(document.querySelector("#week-b-opt"));
             document.cookie = 'currentSelected=week-b; samesite=lax; max-age=31536000';
             weekB.show();
         }
