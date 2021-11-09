@@ -11,7 +11,7 @@ also contains links for stuff.
 it's a static site. you can just use whatever dev server you have and like
 
 ### Link
-[current page](https://time.kcomain.dev)
+[current page](https://kasen.soopy.moe)
 
 ### Licensing
 MIT
